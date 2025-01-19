@@ -9,7 +9,7 @@ const ContextProvider = (props)=>{
     const name = "Yahya Yusuf";
 
     return (
-    <AppContext.Provider value={phone}>
+    <AppContext.Provider value={{phone,name}}>
             {props.children}
         </AppContext.Provider>
     )
