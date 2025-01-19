@@ -5,10 +5,11 @@ import { createContext } from "react";
 export const AppContext = createContext()
 
 const ContextProvider = (props)=>{
-    const phone = "+91 9820956289"
+    const phone = "+91 9820956289";
+    const name = "Yahya Yusuf";
 
     return (
-        <AppContext.Provider value={phone}>
+    <AppContext.Provider value={phone}>
             {props.children}
         </AppContext.Provider>
     )
